@@ -1,0 +1,14 @@
+def sort(array):
+    for i in range(len(array)):
+        p=i
+        for j in range(i+1,len(array)):
+            if array[p]>array[j]:
+                p=j
+        swap=array[i]
+        array[i]=array[p]
+        array[p]=swap
+        
+array=[11,77,56,34]
+sort(array)
+
+print(array)
